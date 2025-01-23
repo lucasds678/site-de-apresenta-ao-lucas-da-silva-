@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Portfolio</title>
     <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Caminho ajustado -->
     <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
@@ -23,35 +23,31 @@
     </header>
 
     <!-- Home Section -->
-    
-
-        <div><section id="home">
-    <div class="home-container">
-        <div class="home-content">
-            <h3>Olá, eu sou</h3>
-            <h1>Lucas da Silva</h1>
-            <h3><span>Full Stack Developer</span></h3>
-            <p>Crio soluções completas para web, trabalhando com back-end, front-end e otimização de dados. Sempre buscando desafios que me permitam crescer e entregar resultados de alta performance.</p>
-           
-            <div class="social-media">
-                <a href="https://linkedin.com/in/lucas-da-silva-856977207" target="_blank" title="LinkedIn">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://github.com/lucasds678" target="_blank" title="GitHub">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="#" title="Instagram">
-                    <i class='bx bxl-instagram'></i>
-                </a>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h3>Olá, eu sou</h3>
+                <h1>Lucas da Silva</h1>
+                <h3><span>Full Stack Developer</span></h3>
+                <p>Crio soluções completas para web, trabalhando com back-end, front-end e otimização de dados. Sempre buscando desafios que me permitam crescer e entregar resultados de alta performance.</p>
+                <div class="social-media">
+                    <a href="https://linkedin.com/in/lucas-da-silva-856977207" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/lucasds678" target="_blank" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" title="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="IMG/lucas sem fundo .png" alt="Lucas"> <!-- Corrigido o nome da imagem -->
             </div>
         </div>
-        <div class="home-img">
-            <img src="IMG/lucas sem fundo .png" alt="Lucas">
-        </div>
-    </div>
-            <a href="#" class="btn">Download CV</a>
-            
-        </div>
+        <!-- Botão de download do currículo -->
+        <a href="curriculo.pdf" download="Curriculo_Lucas_da_Silva.pdf" class="btn">Download CV</a>
     </section>
 
     <!-- Services Section -->
@@ -61,42 +57,35 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Desenvolvedor Web</h3>
-               
             </div>
             <div class="services-box">
                 <i class='bx bx-analyse'></i>
                 <h3>Analista de Dados</h3>
-                
             </div>
             <div class="services-box">
                 <i class='bx bxs-data'></i>
                 <h3>Banco de Dados</h3>
-               
-              
             </div>
         </div>
     </section>
-    <main>
-       
-        <!-- Seção de Contato -->
-        <section id="contato">
-            <h2>Entre em Contato</h2>
-            <p>Envie uma mensagem para nós. Retornaremos o mais breve possível!</p>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-    
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-    
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-   
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Envie uma mensagem para nós. Retornaremos o mais breve possível!</p>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -104,6 +93,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script> <!-- Caminho ajustado -->
 </body>
 </html>

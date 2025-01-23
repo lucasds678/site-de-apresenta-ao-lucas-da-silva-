@@ -1,0 +1,223 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #242121; /* Fundo escuro da página */
+}
+.btn {
+  border: 2px solid #800020; /* Borda vinho */
+  color: #800020; /* Texto em vinho */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #800020; /* Fundo vinho ao passar o mouse */
+  color: white; /* Texto branco no hover */
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #800020; /* Cor vinho para o header */
+  color: white;
+}
+
+/* Estilo para os ícones das redes sociais */
+.social-media a {
+  color: #800020; /* Cor vinho para os ícones */
+  font-size: 2rem; /* Tamanho do ícone */
+  margin: 0 15px; /* Espaçamento entre os ícones */
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #a83232; /* Cor vinho mais claro no hover */
+}
+
+.header .navbar a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header .navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Home Section */
+#home {
+  padding: 50px;
+  background-color: #242121; /* Fundo escuro para harmonia com o design */
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre a descrição e a imagem */
+  flex-wrap: wrap; /* Para responsividade */
+}
+
+.home-content {
+  flex: 1;
+  max-width: 50%;
+  color: white;
+}
+
+.home-content h1, .home-content h3 {
+  color: #800020; /* Títulos com tom de vinho */
+}
+
+.home-content p {
+  margin-top: 15px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.home-img {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+}
+
+.home-img img {
+  max-width: 100%;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+/* Services Section */
+.services {
+  padding: 50px;
+  text-align: center;
+  background: #333; /* Fundo escuro */
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #800020; /* Cor vinho para títulos */
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Responsividade */
+}
+
+.services-box {
+  background: #444; /* Fundo mais claro que o fundo geral */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-box:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services-box i {
+  font-size: 2rem;
+  color: #800020; /* Cor vinho para os ícones */
+}
+
+.services-box h3 {
+  margin: 15px 0;
+}
+
+.services-box p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Estilo da seção de contato */
+#contato {
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #800020; /* Bordas em tons de vinho */
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #800020; /* Fundo vinho para o formulário */
+}
+
+#contato input, #contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#contato button {
+  background-color: #800020; /* Cor vinho para o botão */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+  background-color: #a83232; /* Cor vinho mais clara no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Coluna no celular */
+    text-align: center;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  .home-img {
+    max-width: 100%;
+  }
+
+  .services-container {
+    flex-direction: column; /* Coluna para os boxes de serviços no celular */
+  }
+
+  .services-box {
+    width: 90%; /* Reduzindo a largura no mobile */
+    margin: 10px auto;
+  }
+
+  .header {
+    flex-direction: column; /* Coluna para o header em dispositivos menores */
+    padding: 20px;
+  }
+
+  .social-media a {
+    font-size: 1.5rem; /* Reduzindo o tamanho dos ícones no mobile */
+    margin: 5px;
+  }
+}
